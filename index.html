@@ -6,18 +6,126 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="manifest" href="assets/site.webmanifest">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap">
     <link rel="stylesheet" href="assets/global.css">
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <div id="nav" class="globalnav light1">
-        <h2 class="normaltext lighttxt logotext">KiranPL</h2>
-    <a href="index.html">
-        <h3 class="normaltext lighttxt navtext">Home</h2>
-    </a>
+        <h2 onclick="change()" style="cursor: pointer;"id="logotochange" class="normaltext lighttxt logotext">KiranPL</h2>
+        <div class="containment navtext">
+            <a href="index.html" class="normaltext lighttxt anchorlinksnav">Home -</a>
+
+            <a href="#about" class="normaltext lighttxt anchorlinksnav">About -</a>
+
+            <a href="#coding" class="normaltext lighttxt anchorlinksnav">Coding -</a>
+
+            <a href="#contact" class="normaltext lighttxt anchorlinksnav">Contact -</a>
+
+            <a href="#other" class="normaltext lighttxt anchorlinksnav">Other</a>
+
+        </div>
 
     </div>
+
+</head>
+
+<body>
+    <div id="snackbar">Some text some message..</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="h1 normaltext lighttxt" data-aos="fade-up"data-aos-duration="3000">Hi, I'm Kiran!</h1>
+    <h3 class="h1 normaltext lighttxt"data-aos="fade-up"data-aos-duration="3000" >I make random stuff and websites along with many other things!</h3>
+<br>
+<br>
+<br>
+<hr data-aos="fade-up"data-aos-duration="3000" >
+<br>
+<h1 id="about" class="h1 normaltext lighttxt" data-aos="fade-up"data-aos-duration="3000" >About me</h1>
+<h3 data-aos="fade-up"data-aos-duration="3000"  class="h1 normaltext lighttxt">I'm a person named Kiran. I am also known as kiran_nn. I code in html, css, javascript, php, lua, and C sharp! <br> I make websites and games on platforms such as roblox or games on websites. </h3>
+<br>
+<br>
+<hr data-aos="fade-up"data-aos-duration="3000" >
+<br>
+
+<h1 class="h1 normaltext lighttxt" data-aos="fade-up"data-aos-duration="3000">Coding</h1>
+<h3 class="h1 normaltext lighttxt"data-aos="fade-up"data-aos-duration="3000" >As you may of already found out, I code alot. I made this website myself with html, css, js, and php. And I make lots more stuff. <br>  Below I've made some skill bars showing how much of each coding language I have learnt. 
+</h3>
+<br>
+<br>
+
+<div data-aos="fade-up"data-aos-duration="3000" class="center">
+
+    <p class="normaltext lighttxt">HTML</p>
+<div class="container">
+  <div class="normaltext lighttxt skills html">90%</div>
+</div>
+
+<p class="normaltext lighttxt">CSS</p>
+<div class="container">
+  <div class="normaltext lighttxt skills css">70%</div>
+</div>
+
+<p class="normaltext lighttxt">JavaScript</p>
+<div class="container">
+  <div class="normaltext lighttxt skills js">65%</div>
+</div>
+
+<p class="normaltext lighttxt">PHP</p>
+<div class="container">
+  <div class="normaltext lighttxt skills php">20%</div>
+</div>
+
+<p class="normaltext lighttxt">Lua</p>
+<div class="container">
+  <div class="normaltext lighttxt skills lua">40%</div>
+</div>
+
+</div>
+
+
+<script>
+    function change(){
+        let randomizer = Math.floor(Math.random() *7)
+        let list = ["KiranPL","Kiran_nn","Kiran","Portfolio","Randomness","Objects","e"]
+        document.getElementById("logotochange").innerHTML = list[randomizer]
+    }
+
+    function snackbar(txt,clr) {
+  // Get the snackbar DIV
+  var x = document.getElementById("snackbar");
+
+  // Add the "show" class to DIV
+  x.className = "show";
+  x.innerHTML = txt;
+  x.style.backgroundColor = clr
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+if (urlParams.has('req')){
+
+    if (urlParams.get('req') == "formsubmit"){
+        snackbar("Successfully Contacted.","#00c24a")
+    }else if (urlParams.get('req') == "formfail"){
+        snackbar("Contact failure.","#c20300")
+    }
+
+}
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
+
 </html>
