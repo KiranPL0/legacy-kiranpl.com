@@ -2,6 +2,8 @@
 <html lang="en-ca">
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Kiran's Website</title>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
@@ -10,13 +12,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap">
     <link rel="stylesheet" href="assets/global.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <div id="nav" class="globalnav light1">
         <h2 onclick="change()" style="cursor: pointer;"id="logotochange" class="normaltext lighttxt logotext">KiranPL</h2>
         <div class="containment navtext">
-            <a href="index.html" class="normaltext lighttxt anchorlinksnav">Home -</a>
+            <a href="#top" class="normaltext lighttxt anchorlinksnav">Home -</a>
 
             <a href="#about" class="normaltext lighttxt anchorlinksnav">About -</a>
 
@@ -32,14 +33,14 @@
 
 </head>
 
-<body>
+<body id="body">
     <div id="snackbar">Some text some message..</div>
 
     <br>
     <br>
     <br>
     <br>
-    <h1 class="h1 normaltext lighttxt" data-aos="fade-up"data-aos-duration="3000">Hi, I'm Kiran!</h1>
+    <h1 id="top" class="h1 normaltext lighttxt" data-aos="fade-up"data-aos-duration="3000">Hi, I'm Kiran!</h1>
     <h3 class="h1 normaltext lighttxt"data-aos="fade-up"data-aos-duration="3000" >I make random stuff and websites along with many other things!</h3>
 <br>
 <br>
@@ -47,14 +48,14 @@
 <hr data-aos="fade-up"data-aos-duration="3000" >
 <br>
 <h1 id="about" class="h1 normaltext lighttxt" data-aos="fade-up"data-aos-duration="3000" >About me</h1>
-<h3 data-aos="fade-up"data-aos-duration="3000"  class="h1 normaltext lighttxt">I'm a person named Kiran. I am also known as kiran_nn. I code in html, css, javascript, php, lua, and C sharp! <br> I make websites and games on platforms such as roblox or games on websites. </h3>
+<h3 data-aos="fade-up"data-aos-duration="3000"  class="h1 normaltext lighttxt">I'm a person named Kiran. I am also known as kiran_nn. I code in JavaScript, PHP, LUA, and C#, and I use HTML and CSS as markup languages. <br> I make websites and games on platforms such as roblox or games on websites. </h3>
 <br>
 <br>
 <hr data-aos="fade-up"data-aos-duration="3000" >
 <br>
 
-<h1 class="h1 normaltext lighttxt" data-aos="fade-up"data-aos-duration="3000">Coding</h1>
-<h3 class="h1 normaltext lighttxt"data-aos="fade-up"data-aos-duration="3000" >As you may of already found out, I code alot. I made this website myself with html, css, js, and php. And I make lots more stuff. <br>  Below I've made some skill bars showing how much of each coding language I have learnt. 
+<h1 id="coding" class="h1 normaltext lighttxt" data-aos="fade-up"data-aos-duration="3000">Coding</h1>
+<h3 class="h1 normaltext lighttxt"data-aos="fade-up"data-aos-duration="3000" >I code using various programming languages and markup languages. This website was created with HTML and CSS as the markup and structure, and JavaScript and PHP as the programming languages.<br>  Below I've made some skill bars showing how much of each programming/markup language I use. 
 </h3>
 <br>
 <br>
@@ -62,38 +63,83 @@
 <div data-aos="fade-up"data-aos-duration="3000" class="center">
 
     <p class="normaltext lighttxt">HTML</p>
-<div class="container">
-  <div class="normaltext lighttxt skills html">90%</div>
+<div class="containerlight">
+  <div class="normaltext lighttxt skills html">30%</div>
 </div>
 
 <p class="normaltext lighttxt">CSS</p>
-<div class="container">
-  <div class="normaltext lighttxt skills css">70%</div>
+<div class="containerlight">
+  <div class="normaltext lighttxt skills css">20%</div>
 </div>
 
 <p class="normaltext lighttxt">JavaScript</p>
-<div class="container">
-  <div class="normaltext lighttxt skills js">65%</div>
+<div class="containerlight">
+  <div class="normaltext lighttxt skills js">30%</div>
 </div>
 
 <p class="normaltext lighttxt">PHP</p>
-<div class="container">
-  <div class="normaltext lighttxt skills php">20%</div>
+<div class="containerlight">
+  <div class="normaltext lighttxt skills php">5%</div>
 </div>
 
 <p class="normaltext lighttxt">Lua</p>
-<div class="container">
-  <div class="normaltext lighttxt skills lua">40%</div>
+<div class="containerlight">
+  <div class="normaltext lighttxt skills lua">15%</div>
 </div>
+
+</div>
+<br>
+<br>
+<hr data-aos="fade-up"data-aos-duration="3000" >
+<br>
+<h1 data-aos="fade-up"data-aos-duration="3000" id="contact" class="h1 normaltext lighttxt">Contact</h1>
+<h3  data-aos="fade-up"data-aos-duration="3000" class="h1 normaltext lighttxt">You can <a class="anchorlinksnav blue normaltext" href="mailto:kiran_nn@kiranpl.com">email me</a> or contact me on discord by friend requesting me. My discord username and tag: kiran#1000 <br>
+  You can also alternativley contact via <a class="anchorlinksnav blue normaltext" href="https://www.twitter.com/KiranPL0">twitter</a>.
+ </h3>
+
+<br>
+<br>
+<hr data-aos="fade-up"data-aos-duration="3000" >
+<br>
+<h1 data-aos="fade-up"data-aos-duration="3000" id="other" class="h1 normaltext lighttxt">Other</h1>
+<h3 data-aos="fade-up"data-aos-duration="3000"class="h1 normaltext lighttxt">There isn't any other options <i>yet!</i></h3>
+
+<br>
+<br>
+<br>
+
+
+<div hidden id="" data-aos="fade-up"data-aos-duration="3000" id="login"class="loginmain" style="text-align: center;margin: 0 auto;">
+  <h1 id="" class="h1 normaltext lighttxt">Contact</h1>
+  <form action="contacthandler.php" method="POST">
+      <input type="email" name="email" class = "centerpls textbox" placeholder="Email" value="">
+      <br>
+      <br>
+      <input type="text" name="subject" class = "centerpls textbox" placeholder="Subject" value="">
+      <br>
+      <br>
+      <input type="text"  name="contents" class = "centerpls textbox"  placeholder="Message" value="">
+      <br>
+      <br>
+
+      <input type="submit" name = "send" class = "submitt"value="Login">
+  </form>
 
 </div>
 
 
 <script>
+
+  var islightmode = true
     function change(){
         let randomizer = Math.floor(Math.random() *7)
         let list = ["KiranPL","Kiran_nn","Kiran","Portfolio","Randomness","Objects","e"]
         document.getElementById("logotochange").innerHTML = list[randomizer]
+    }
+    function change2(){
+        let randomizer = Math.floor(Math.random() *7)
+        let list = ["Thanks for visiting","Спасибо за визит","Merci de votre visite","Gracias por su visita","Obrigado pela visita","Danke für den Besuch","Dzięki za odwiedziny"]
+        document.getElementById("thanks").innerHTML = list[randomizer]
     }
 
     function snackbar(txt,clr) {
@@ -119,7 +165,101 @@ if (urlParams.has('req')){
         snackbar("Contact failure.","#c20300")
     }
 
+
 }
+
+function getCookie(name) {
+    var dc = document.cookie;
+    var prefix = name + "=";
+    var begin = dc.indexOf("; " + prefix);
+    if (begin == -1) {
+        begin = dc.indexOf(prefix);
+        if (begin != 0) return null;
+    }
+    else
+    {
+        begin += 2;
+        var end = document.cookie.indexOf(";", begin);
+        if (end == -1) {
+        end = dc.length;
+        }
+    }
+    // because unescape has been deprecated, replaced with decodeURI
+    //return unescape(dc.substring(begin + prefix.length, end));
+    return decodeURI(dc.substring(begin + prefix.length, end));
+} 
+
+ function darkmode() {
+
+  var myCookie = getCookie("mode");
+
+if (myCookie == null) {
+  document.cookie = "mode=dark; expires=Thu, 18 Dec 2021 12:00:00 UTC";
+
+}
+else {
+  document.cookie = "mode=dark; expires=Thu, 18 Dec 2021 12:00:00 UTC";
+}
+
+  $('.light1').addClass('dark1'); 
+  $('.light1').removeClass('light1'); 
+  $('.lighttxt').addClass('darktxt'); 
+  $('.lighttxt').removeClass('lighttxt'); 
+  $('.containerlight').addClass('containerdark'); 
+  $('.containerlight').removeClass('containerlight'); 
+
+  document.getElementById("body").style.backgroundColor = "#303030"
+  islightmode = false
+}
+function lightmode() {
+
+var myCookie = getCookie("mode");
+
+if (myCookie == null) {
+document.cookie = "mode=light; expires=Thu, 18 Dec 2021 12:00:00 UTC";
+
+}
+else {
+document.cookie = "mode=light; expires=Thu, 18 Dec 2021 12:00:00 UTC";
+}
+
+$('.dark1').addClass('light1'); 
+$('.dark1').removeClass('dark1'); 
+$('.darktxt').addClass('lighttxt'); 
+$('.darktxt').removeClass('darktxt'); 
+$('.containerdark').addClass('containerlight'); 
+$('.containerdark').removeClass('containerdark'); 
+
+document.getElementById("body").style.backgroundColor = "#ffffff"
+islightmode = false
+}
+
+
+
+$( document ).ready(function() {
+
+    var tocheck = getCookie("mode")
+    if (tocheck == null){
+
+    }else if (tocheck == "dark"){
+      darkmode()
+      islightmode = false
+    }else if (tocheck == "light"){
+      lightmode()
+      islightmode = true
+    }
+});
+
+function togglemodes(){
+  if (islightmode == true){
+    darkmode()
+    islightmode = false
+  }else if (islightmode == false){
+    lightmode()
+    islightmode = true
+  }
+}
+
 </script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
@@ -127,5 +267,14 @@ if (urlParams.has('req')){
 </script>
 
 </body>
+<footer>
+<h2 onclick="change2()" id="thanks" style="cursor: pointer;" class="normaltext lighttxt center">Thanks for visiting</h2>
+<br>
+<br>
+<h2 onclick="togglemodes()" id="e" style="cursor: pointer;" class="normaltext lighttxt center">Toggle light/dark mode</h2>
 
+<br>
+<br>
+
+</footer>
 </html>
