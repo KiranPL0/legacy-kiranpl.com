@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+    <head>
+        <link rel="stylesheet" href="no.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+
+
+    <body>
+        <div class="black">
+            <h1 class="title">Do you agree to our terms of use and privacy policy?</h1>
+            <div class="container">
+                <p class="normaltext">By using this site you agree to our <a class="anchor" href="https://kiranpl.com/terms">terms of use</a> and <a class="anchor" href="https://kiranpl.com/privacy">privacy policy</a>.</p>
+                <br>
+                <br>
+                <br>
+
+                <p id="decline" class="declined hidden">You have chosen that you do not agree, please leave this site.</p>
+                <button onclick="yes()" class="button">I agree</button> 
+                <button onclick="no()" class="button">I Disagree</button> 
+            </div>
+        </div>
+
+        <script>
+
+            function no(){
+                var element = document.getElementById("decline");
+                element.classList.remove("hidden");
+                element.classList.add("shown");
+
+            }
+
+
+            function yes(){
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+                var redirecto = urlParams.get('h')
+                window.location.replace(redirecto);
+                document.cookie = "accept=YES; expires=Thu, 18 Dec 2021 12:00:00 UTC path=/";
+
+            }
+        </script>
+
+    </body>
+</html>
