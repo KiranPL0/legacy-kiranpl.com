@@ -1,18 +1,6 @@
 //check.js
 
-/*
 
-oooo         o8o                                 
-`888         `"'                                 
- 888  oooo  oooo  oooo d8b  .oooo.   ooo. .oo.   
- 888 .8P'   `888  `888""8P `P  )88b  `888P"Y88b  
- 888888.     888   888      .oP"888   888   888  
- 888 `88b.   888   888     d8(  888   888   888  
-o888o o888o o888o d888b    `Y888""8o o888o o888o 
-made by kiran no steal or i murder and kill!!!!!!!
-
-
-*/
 
 function getCookie(name) {
     var dc = document.cookie;
